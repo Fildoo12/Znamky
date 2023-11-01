@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="430.0" prefWidth="304.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2" fx:controller="com.spsmb.picek.znamky.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Prumer znamek" textFill="#429ef5">
+      <VBox.margin>
+         <Insets top="-150.0" />
+      </VBox.margin>
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+   <Label text="Jméno žáka" textFill="#ff1100">
+      <VBox.margin>
+         <Insets bottom="-20.0" />
+      </VBox.margin>
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <ChoiceBox fx:id="studentInput" prefWidth="150.0" />
+    <Button fx:id="submit" onAction="#onSubmitButtonClick" text="SUBMIT" />
+   <Label text="Předmět">
+      <padding>
+         <Insets bottom="-20.0" />
+      </padding>
+   </Label>
+   <ChoiceBox fx:id="text1" prefWidth="150.0" />
+   <Label text="Známky">
+      <VBox.margin>
+         <Insets bottom="-20.0" left="-200.0" />
+      </VBox.margin>
+   </Label>
+   <TextField fx:id="inputNumber" />
+   <Label text="Průměr">
+      <VBox.margin>
+         <Insets bottom="-20.0" right="200.0" />
+      </VBox.margin>
+   </Label>
+   <TextField fx:id="text2" />
+</VBox>
